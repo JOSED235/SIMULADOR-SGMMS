@@ -43,8 +43,8 @@ public class App extends Application {
         String carpetaCapturas = System.getProperty("sgmms.capturas");
         Rectangle2D pantalla = Screen.getPrimary().getVisualBounds();
         // Las capturas usan un tamaño fijo, aunque no quepa en la pantalla (el snapshot no depende de ella)
-        double ancho = carpetaCapturas != null ? 1600 : Math.min(1400, pantalla.getWidth() - 40);
-        double alto = carpetaCapturas != null ? 900 : Math.min(860, pantalla.getHeight() - 40);
+        double ancho = carpetaCapturas != null ? Integer.getInteger("sgmms.capturas.ancho", 1600) : Math.min(1400, pantalla.getWidth() - 40);
+        double alto = carpetaCapturas != null ? Integer.getInteger("sgmms.capturas.alto", 900) : Math.min(860, pantalla.getHeight() - 40);
 
         escena = new Scene(new StackPane(), ancho, alto, Paleta.FONDO);
         escena.getStylesheets().add(getClass().getResource("estilos.css").toExternalForm());
