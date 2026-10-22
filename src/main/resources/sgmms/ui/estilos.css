@@ -1,0 +1,361 @@
+/* Consola de despacho: tema oscuro */
+
+.root {
+    -fx-font-family: "Segoe UI", "Inter", "Helvetica Neue", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #0b0e13;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.label {
+    -fx-text-fill: #e6ebf2;
+}
+
+.suave {
+    -fx-text-fill: #8a94a6;
+}
+
+.pequeno {
+    -fx-font-size: 11.5px;
+}
+
+.negrita {
+    -fx-font-weight: bold;
+}
+
+/* ---- Barra superior ---- */
+
+.barra-superior {
+    -fx-background-color: #0f141b;
+    -fx-padding: 8 16;
+    -fx-spacing: 22;
+    -fx-alignment: center-left;
+    -fx-border-color: #1f2733;
+    -fx-border-width: 0 0 1 0;
+}
+
+.marca {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #38d4ff;
+}
+
+.reloj {
+    -fx-font-family: "Consolas", "Cascadia Mono", monospace;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.dato {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.etiqueta-dato {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #8a94a6;
+}
+
+/* ---- Panel lateral ---- */
+
+.panel {
+    -fx-background-color: #10151d;
+    -fx-border-color: #1f2733;
+    -fx-border-width: 0 0 0 1;
+}
+
+.seccion {
+    -fx-padding: 12 14 14 14;
+    -fx-spacing: 7;
+    -fx-border-color: #1a212c;
+    -fx-border-width: 0 0 1 0;
+}
+
+.titulo-seccion {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8a94a6;
+}
+
+.fila {
+    -fx-background-color: #161c26;
+    -fx-background-radius: 7;
+    -fx-border-color: transparent;
+    -fx-border-radius: 7;
+    -fx-padding: 7 10;
+    -fx-spacing: 9;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+}
+
+.fila:hover {
+    -fx-background-color: #1c2532;
+}
+
+.fila-seleccionada {
+    -fx-background-color: #172536;
+    -fx-border-color: #38d4ff;
+}
+
+.tarjeta-detalle {
+    -fx-background-color: #151b25;
+    -fx-background-radius: 8;
+    -fx-padding: 10 12;
+    -fx-spacing: 6;
+}
+
+.chip {
+    -fx-background-radius: 4;
+    -fx-padding: 1 6 1 6;
+    -fx-font-size: 10.5px;
+    -fx-font-weight: bold;
+}
+
+.vacio {
+    -fx-text-fill: #5d6778;
+    -fx-font-size: 12px;
+    -fx-padding: 4 2;
+}
+
+/* ---- Botones ---- */
+
+.boton {
+    -fx-background-color: #1a2230;
+    -fx-text-fill: #dfe6ef;
+    -fx-background-radius: 6;
+    -fx-border-color: #2b3646;
+    -fx-border-radius: 6;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+    -fx-font-size: 12.5px;
+}
+
+.boton:hover {
+    -fx-background-color: #222d3e;
+}
+
+.boton-activo {
+    -fx-border-color: #38d4ff;
+    -fx-text-fill: #38d4ff;
+}
+
+.boton-primario {
+    -fx-background-color: #38d4ff;
+    -fx-text-fill: #061018;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+
+.boton-primario:hover {
+    -fx-background-color: #74e2ff;
+}
+
+.boton-mini {
+    -fx-padding: 3 9;
+    -fx-font-size: 11.5px;
+}
+
+/* ---- Superposiciones ---- */
+
+.aviso {
+    -fx-background-color: rgba(16, 22, 30, 0.94);
+    -fx-background-radius: 8;
+    -fx-border-color: #2b3646;
+    -fx-border-radius: 8;
+    -fx-padding: 8 14;
+}
+
+.aviso-error {
+    -fx-border-color: #ff4d5e;
+}
+
+.aviso-exito {
+    -fx-border-color: #38d4ff;
+}
+
+.banda-manual {
+    -fx-background-color: rgba(56, 212, 255, 0.14);
+    -fx-border-color: #38d4ff;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 6 14;
+}
+
+.atajos {
+    -fx-background-color: rgba(11, 14, 19, 0.82);
+    -fx-background-radius: 6;
+    -fx-padding: 5 10;
+}
+
+.velo {
+    -fx-background-color: rgba(6, 9, 13, 0.78);
+}
+
+.tarjeta {
+    -fx-background-color: #10151d;
+    -fx-background-radius: 12;
+    -fx-border-color: #222b38;
+    -fx-border-radius: 12;
+    -fx-padding: 22 26;
+    -fx-spacing: 12;
+}
+
+.titulo-grande {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f2f6fb;
+}
+
+.subtitulo {
+    -fx-font-size: 16px;
+    -fx-text-fill: #38d4ff;
+}
+
+.titulo-medio {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.opcion {
+    -fx-background-color: #151b25;
+    -fx-background-radius: 8;
+    -fx-border-color: #222b38;
+    -fx-border-radius: 8;
+    -fx-padding: 9 12;
+    -fx-cursor: hand;
+    -fx-spacing: 2;
+}
+
+.opcion:hover {
+    -fx-background-color: #1a2230;
+}
+
+.opcion-activa {
+    -fx-border-color: #38d4ff;
+    -fx-background-color: #13202d;
+}
+
+.campo {
+    -fx-background-color: #151b25;
+    -fx-text-fill: #e6ebf2;
+    -fx-prompt-text-fill: #5d6778;
+    -fx-background-radius: 6;
+    -fx-border-color: #2b3646;
+    -fx-border-radius: 6;
+}
+
+.kpi {
+    -fx-background-color: #10151d;
+    -fx-background-radius: 10;
+    -fx-border-color: #1f2733;
+    -fx-border-radius: 10;
+    -fx-padding: 12 16;
+    -fx-spacing: 2;
+    -fx-min-width: 140;
+}
+
+.kpi-valor {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+/* ---- Scroll ---- */
+
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #2a3442;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* ---- Barras de progreso ---- */
+
+.progress-bar > .track {
+    -fx-background-color: #1e2633;
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+}
+
+.progress-bar > .bar {
+    -fx-background-insets: 0;
+    -fx-background-radius: 3;
+    -fx-padding: 3;
+}
+
+/* ---- Gráficas ---- */
+
+.chart {
+    -fx-padding: 6;
+}
+
+.chart-plot-background {
+    -fx-background-color: #0d1219;
+}
+
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #1d2531;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+}
+
+.axis {
+    -fx-tick-label-fill: #8a94a6;
+}
+
+.axis-label, .chart-title {
+    -fx-text-fill: #c4ccd8;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #c4ccd8;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #38d4ff;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #38d4ff;
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: #38d4ff, #0d1219;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #ffb020;
+    -fx-stroke-width: 2px;
+}
+
+.default-color1.chart-line-symbol {
+    -fx-background-color: #ffb020, #0d1219;
+}
+
+.tooltip {
+    -fx-background-color: #1a2230;
+    -fx-text-fill: #e6ebf2;
+}
